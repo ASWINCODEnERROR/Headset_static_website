@@ -1,0 +1,575 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,500;1,600&display=swap');
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 5px;
+    padding: 0;
+    scroll-padding-top: 1rem;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    /* border: 1px solid red; */
+}
+
+
+img{
+    width: 100%;
+}
+body{
+    color:black;
+}
+.main{
+    overflow-x: hidden;
+}
+section{
+    padding: 4rem 0 3rem;
+    margin-top: auto;
+    
+}
+.container{
+    max-width: 100%;
+    width: 100%;
+    margin-left:10px;
+    margin-top: 0px;
+    
+}
+header{
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+header.shadow{
+    background:#ffffff;
+    box-shadow:  1px 2px 4px rgb(15 54 55 / 10%);
+    transition: 0.1s;
+   margin-top:0px;
+    
+}
+.logo img{
+    width: 12rem;
+    margin-left: 0;
+}
+.nav{
+
+    display: flex;
+    align-items: center;
+    justify-content:space-between;    
+    padding: 5px 0;
+    width: 1100px;
+    height: 90px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+
+}
+.nav h2{
+    margin-left: 25px;
+
+}
+#menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+.navbar {
+   
+    display: flex;
+    column-gap: 2rem; 
+    box-sizing: content-box;
+    padding: 1px;
+
+    
+}
+.navbar a{
+    
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: linear-gradient(#ffffff,#dddcfa);
+    color: rgb(0, 0, 0);
+    /* -webkit-background-clip: text;  tranperant */
+    /* background-clip: text; */
+    width: 90px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    
+} 
+ .navbar a:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(64, 19, 189);
+}
+.home-content{
+    min-height: 650px;
+    display: grid ;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2rem;
+    padding: 60px;
+    
+}
+.home-text h1{
+    font-size: 3.4rem;
+    margin-bottom: 1rem;
+}
+.home-text p{
+    margin-bottom: 1rem;
+}
+#btn{
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    background-color: rgb(10, 10, 10);
+    color:rgb(255, 255, 255);
+    padding: 16px 24px;
+    border-radius: 5px;
+}
+#crt{
+font-size: 1.6rem;
+}
+#btn:hover{
+   background-color: green;
+}
+.heading {
+    text-align: center;
+    font-size: 3.4rem;
+    /* background: linear-gradient(#161616,#dddcfa);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text; */
+    margin-bottom: 4rem;
+    padding-top: 1%;
+}
+.specs-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    align-items: center;
+
+}
+.specs-details{
+    display: grid;
+    row-gap: 1.4rem;
+
+}
+.specs-details .box .fa-solid{
+    font-size: 1.6rem;
+}
+li a{
+    text-decoration: none;
+}
+.specs-details .box h3{
+    font-size: 1rem;
+
+}
+.specs-details p{
+    margin-top: 0.5rem;
+}
+.specs-img{
+    
+    height: 300px;
+}
+.shop-container{
+    display: grid;
+    grid-template-columns: repeat(3,200px);
+    justify-content: center;
+    gap: 5rem;
+    /* background-color: aqua; */
+}
+.shop-container .box{
+    position: relative;
+    
+    padding: 10px;
+    background: rgb(255, 254, 254);
+    box-shadow: 0 15px 8px rgba(12, 62, 64, 0.1);
+    border-radius: 0.5rem;
+    /* height: 1x; */
+    width: 200px;
+    display: grid;
+    
+
+}
+
+/* ................................................................. */
+.shop img{     
+    width: 180px;
+    height: 224.9px;
+    
+    
+    
+}
+ #more {
+
+    text-decoration:none;
+    color: rgb(255, 255, 255);
+
+
+}
+.view{
+    /* border: 1px solid rgb(249, 0, 0); */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 149, 0) ;
+    /* color: #000000; */
+    padding: 8px 2px;
+    border-radius: 5px;
+    text-decoration: none;
+    left: 144%;
+}
+
+.shop-container .box h3{
+    margin-top: 10px;
+    font-size: 1rem;
+}
+.shop-container .box span{
+    font-weight: 500;
+}
+.shop-container .box .fa-solid{
+    position: absolute;
+    bottom: 0.8rem;
+    right: 0.8rem;
+    padding: 10px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.shop-container .box .fa-solid:hover{
+    background: orange;
+}
+.buds-container{
+    display: grid;
+    grid-template-columns: 250px max-content;
+    justify-content: center;
+    align-items: center;
+    background: rgba(27, 19, 19, 0.921);
+    color: white;
+    border-radius: 0.5rem;
+    /* border: 2px solid red; */
+    height: 35rem;
+    column-gap: 4rem;
+} 
+.buds-img img{
+    width: 320px;
+    /* height: 280px; */
+}
+.buds-text h2{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    /* display: flex;
+    justify-content: center; */
+
+}
+.buds-text span{
+    font-weight: 400;
+}
+.buds-text p{
+    margin: 1rem 0 1rem;
+}
+/* .buds-text .btn:hover{
+    background-color: blue;
+} */
+.footer-container{
+   
+    width: 100%;
+    margin-left: 0px;
+    background-color: black;
+    padding: 25px;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px,auto));
+    gap: 1rem;
+
+}
+.footer-combi{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px,auto));
+    gap: 1rem;
+    
+  
+}
+.footer-box{
+    display: flex;
+    flex-direction:column ;
+    
+}
+.footer h2{
+    margin-left: 20px;
+    left: 5px;
+}
+.footer-box h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    /* margin-left: 0px; */
+
+}
+.footer-box a{
+    color:rgb(255, 255, 255);
+    margin-bottom: 4px;
+    text-decoration: none;
+}
+.social{
+    display: flex;
+   
+
+    column-gap: 1rem;
+
+}
+.social .fa-brands{
+
+    border-radius: 0.5rem;
+    
+    font-size: 1.5rem;
+
+}
+.social .fa-brands:hover{
+    color: rgb(0, 8, 255);
+    /* color: aliceblue; */
+}
+.note h6 {
+    display: block;
+    justify-content: center;
+    margin-top: -30px;
+    font-size: xx-small;
+}
+
+  /* media */
+
+@media (max-width: 1080px){
+    .container{
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+@media (max-width: 1080px){
+    section{
+        padding: 50px 0;
+    }
+    .home-text h1{
+        font-size: 3rem;
+    }
+}
+@media (max-width: 786px){
+    .logo img{
+        /* 100px */
+        width: 10rem;
+    }
+
+
+    .navbar{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: rgb(139, 178, 223);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 5px 8px rgb( 15 54 55 / 10%);
+        clip-path: circle(0% at 50% 0);
+        transition: 0.5s;
+
+    }
+    .navbar a{
+        display:block;
+        padding: 12px;
+        justify-content: space-between;
+    }
+    .navbar.active {
+        clip-path:circle(144% at 50% 0);
+    }
+    .home-text h1{
+        font-size: 2rem;
+    }
+    p{
+        font-size: 0.875rem;
+    }
+    .btn{
+        padding: 15px 16px;
+    }
+    .buds-container{
+        grid-template-columns: 1fr;
+    }
+    .buds-text{
+        padding: 1.4rem;
+    }
+
+}
+/* 684 */
+@media (max-width: 700px) {
+    .home-content,
+    .specs-container,
+    .buds-container{
+        grid-template-columns: 1fr;
+    }
+
+    .buds-text{
+        padding: 1.4rem;
+    }
+    .home-content{
+        min-height: 540px;
+    }
+    .specs-img{
+        padding-top: 2rem;
+    }
+    .shop-container{
+        grid-template-columns: repeat(2,184px);
+        gap: 3rem;
+    }
+}
+
+
+@media screen and (min-width: 350px) and (max-width: 500px){
+     #menu-icon{       
+        position:absolute;
+        display: flex;
+        justify-content: center;
+        right: 10px;
+        
+ }
+ section{
+    /* background-color: black; */
+    padding: 4rem 0 3rem;
+    margin-top: 0px;
+  
+}
+ .nav h2{
+    padding: 5px;
+    margin-left: 5px;
+   
+    margin-top: 20px;
+ }
+ .navbar a {
+    display: flex;
+    padding: 12px;
+    align-items: center;
+    justify-content: center;
+}
+.view {
+   
+    left: 0;
+}
+
+.navbar {
+    background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+  width: 500px;
+  position: fixed;
+    left: 0;
+    transition: .4s;
+    padding-top: 5.5rem;
+
+}
+ .shop-container .box {
+    position: relative;
+    padding: 20px;
+    
+    background: rgb(255, 255, 255);
+    box-shadow: 0 15px 8px rgba(12, 62, 64, 0.1);
+    border-radius: 0.5rem;
+    width: 300px;
+    left: -86px;
+    height: 375px;
+    
+}
+.shop img {
+    width: 250px;
+    height: 255px;
+}
+    .shop-container{
+        grid-template-columns: repeat(1,144px);
+        
+        
+    }
+    .buds-text h2{
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-top: 19rem;
+        text-align: center;
+    }
+    .buds-img img{
+        
+        width: 320px;
+        margin-top: -850px;
+        padding: 10px;
+        
+    }
+    #btn{
+    margin-left: 41px;
+    }
+    .footer-combi{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(110px,auto));
+        gap: 1rem;
+ 
+        }
+
+        .footer h2{
+            margin-top: 5px;
+            display: block;
+            justify-content: center;
+            align-items: center;
+        }
+        .social{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+
+}
+
+
+@media screen and (min-width: 500px) and (max-width: 750px){
+    #menu-icon{       
+       position: relative;
+       margin-left: -33px;
+}
+@media only screen and (max-width: 768px) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar {
+        display: none; /* Hide the navbar on smaller screens */
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #ffffff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar.show {
+        display: flex; /* Show the navbar when the menu is toggled */
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+
+    #menu-icon {
+        display: inline-block; /* Display the menu icon on smaller screens */
+    }
+}
+}
